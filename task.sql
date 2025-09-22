@@ -28,7 +28,7 @@ CREATE TABLE IF NOT EXISTS Logs (
 ) ENGINE=BLACKHOLE;
 
 CREATE TABLE IF NOT EXISTS ProductReporting (
-    Date DATE,
-    ProductName VARCHAR(100),
-    Orders INT
+    Date DATE NOT NULL,
+    ProductName VARCHAR(100) NOT NULL,
+    Orders INT NOT NULL
 ) ENGINE=CSV;
